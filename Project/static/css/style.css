@@ -1,0 +1,89 @@
+.container-1,
+.container-2 {
+  border: 1px solid black;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.flex-box-container-1,
+.flex-box-container-1 div,
+.flex-box-container-2,
+.flex-box-rps {
+  display: flex;
+
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.flex-box-container-2 img {
+  margin: 10px;
+  box-shadow: 0px 10px 50px rgba(237, 108, 241, 0.7);
+}
+
+.flex-box-rps img:hover {
+  box-shadow: 0px 10px 50px rgba(181, 69, 255, 0.7);
+}
+
+h2,
+h3 {
+  font-family: "Spartan", sans-serif;
+}
+.bj {
+  background-image: url(../blackjack_assets/images/GreenVelvet.jpg);
+  display: flex;
+  flex-direction: column;
+}
+.bj h1,
+.bj h2,
+.bj h3,
+.bj table {
+  background-color: darkred;
+  width: 300px;
+  color: white;
+  border-radius: 5%;
+  padding: 2px;
+  margin: 10 auto;
+  text-align: center;
+  border: 3px solid black;
+}
+.bj h2 {
+  width: 500px;
+}
+.bjBtnRow2 {
+  width: 300px;
+  padding: 5px;
+  border-radius: 5%;
+  margin: 10 auto;
+  border: 2px solid black;
+}
+.bjBtnRow2 button {
+  margin: 5px;
+  border: 2px solid black;
+}
+.bjRow1 {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.BJPlayerBox,
+.BJBotBox {
+  border: 2px solid black;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 450px;
+  margin: 10px;
+  border-radius: 8%;
+}
+.BJRow1 img {
+  height: 150px;
+  width: 105;
+  margin: 15px;
+  border: 2px solid black;
+  border-radius: 8%;
+}

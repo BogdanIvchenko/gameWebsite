@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruh</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+
+    <!-- Game 1: How old are you in days?-->
+    <div class="container-1">
+        <div class ="flex-box-container-1 div">
+            <h2> Game 1: How old are you in days?</h2>
+            <h3>Please enter your birth date below.</h3>
+        </div>
+        <div class ="flex-box-container-1">
+            <div>
+                <input type="date" name="mytime" id="datePicked">
+            </div>
+            <div class ="button">
+                <button class ="btn btn-primary" onclick="ageInDays()">Calculate</button>
+            </div>
+            <div class ="button">
+                <button class ="btn btn-danger" onclick="reset()">Reset</button>
+            </div>
+                
+        </div>
+        <div class="flex-box-container-1">
+            <div id="resultOutput"></div>
+        </div>
+    </div>
+
+    <!-- challange 2: Generate Cats-->
+    <div class="container-2">
+        <h2> Game : cat generator.</h2>
+
+        <div class=flex-box-container-2>
+            <button class="btn btn-success" onclick="generateCat()"> Meow! </button>
+            <button class="btn btn-danger" onclick="removecat()"> unMeow </button>
+        </div>
+
+        <div class="flex-box-container-2 img" id="flex-cat-gen"></div>
+    </div>
+
+    <!-- challange 2: Rock Paper Scisors-->
+    <div class = container-1>
+        <h2>Game 3: Rock, Paper, Scisors</h2>
+        <div class="flex-box-rps" id="flex-box-rps-div">
+            <img id="rock" src="static/images/Rock.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="paper" src="static/images/Paper.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+            <img id="scisors" src="static/images/Scisors.jpg" height=150 width=150 alt="" onclick="rpsGame(this)">
+        </div>
+
+    </div>
+
+    <div class = container-1>
+        <div class= flex-box-container-1>
+            <h2>Game 4: Change the collor of all buttons on this page</h2>
+        </div>
+        <div class= flex-box-container-1>
+            <select name="buttonCollor" id="buttonCollorId" onchange="buttonCollorsSelector(this.value)">
+                <option value="green"> Green </option>
+                <option value="red"> Red</option>
+                <option value="blue"> Blue </option>
+                <option value="yellow"> Yellow </option>
+                <option value="random"> Random </option>
+                <option value="reset"> Reset </option>
+            </select>
+            <button class="btn btn-success" > Success </button>
+            <button class="btn btn-danger" > Danger </button>
+            <button class="btn btn-primary" > Primary </button>
+            <button class="btn btn-warning" > Warning </button>
+        </div>
+    </div>
+
+    <div class = "container-1 bj">
+        <div class="bjHeader">
+            <h2>Game 5: BlackJack</h2>
+            <h3><span id="gameMessage"> Click Hit to Play!</span></h3>
+        </div>
+        <div > 
+            <div class="BJRow1" >
+                <div class="BJPlayerBox" id="BJPlayerBox">
+                   <h3>You:<span id="playerScore">0</span></h3>
+                
+                </div>
+                <div class="BJBotBox" id="BJBotBox">
+                    <h3>Opponent: <span id="botScore">0</span></h3>
+                </div>
+            </div>
+            <div class="BJRow2">
+                <div class="bjBtnRow2 ">
+                    <button class="btn btn-primary" id="hit" onclick="bjhit(BJ.player)">Hit</button>
+                    <button class="btn btn-warning" id="stand" onclick="bjstand()">Stand</button>
+                    <button class="btn btn-danger" id="deal" onclick="bjdeal()">Deal</button>
+                </div>
+            </div>
+
+            <div>
+                <table>
+                    <tr>
+                        <td>Wins:</td>
+                        <td>Loses:</td>
+                        <td>Draws:</td>
+                    </tr>
+                    <tr>
+                        <td><span id="winsNumber">0</span></td>
+                        <td><span id="losesNumber">0</span></td>
+                        <td><span id="drawsNumber">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src=static/js/script.js></script>
+</body>
+</html>
